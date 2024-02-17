@@ -5,8 +5,79 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktika_Kornishin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Authorization" Height="500" Width="500">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Purple"/>
+            <GradientStop Color="Black" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Canvas>
+        <TextBlock Text="Authorization" FontSize="25" FontFamily="Segoe Print" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="189" Canvas.Top="117" >
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.785"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="login" FontSize="25" FontFamily="Segoe Print" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="119" Canvas.Top="176" >
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.451"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="password" FontSize="25" FontFamily="Segoe Print" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="90" Canvas.Top="226" >
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.321"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBox x:Name="Login" FontSize="20" Width="206" Canvas.Left="221" Canvas.Top="183" Height="31" Background="Transparent" BorderBrush="Black">
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.435"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBox x:Name="Password" FontSize="20" Width="206" Canvas.Left="221" Canvas.Top="233" Height="31" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" BorderBrush="Black" >
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.422"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBlock Text="Create a new user" FontSize="20" FontFamily="Segoe Print" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="99" Canvas.Top="322" >
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Button Content="registration" x:Name="registration" FontSize="20" Foreground="White" FontFamily="Segoe Print" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="296" Canvas.Top="320" Background="Transparent" BorderThickness="0" Click="registration_Click">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </Button>
+        <Button Content="Enter" FontSize="20" x:Name="Enter" FontFamily="Segoe Print" Canvas.Left="221" Canvas.Top="280" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Enter_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.363"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <TextBlock  Name="oshibka" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Width="500" Height="46" Canvas.Top="362"/>
+    </Canvas>
 </Window>
+
